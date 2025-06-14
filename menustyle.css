@@ -1,0 +1,74 @@
+/* Reset + Background Image on BODY only */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('Simple\ Minimalist\ Fashion\ Magazine\ Cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.overlaycontent{
+text-align: center;
+margin: 10px;
+h1{
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(156, 231, 253);
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+height: 90vh;
+ text-align: center;
+  box-sizing: border-box;
+}
+.exploremenu{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 15px;
+  button {
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.171);
+  color: rgb(15, 0, 0);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  border-radius: 8px;
+  cursor: pointer;
+}
+}
+button:hover{
+    background-color: white;
+    transition:  0.3s, ease-in;
+}
